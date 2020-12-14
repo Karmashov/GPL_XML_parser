@@ -6,7 +6,7 @@ public class DBConnection
 {
     private static Connection connection;
 
-    private static String dbName = "cisco_gpl";
+    private static String dbName = "db_bot";
     private static String dbUser = "root";
     private static String dbPass = "1234";
 

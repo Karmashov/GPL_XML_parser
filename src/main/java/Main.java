@@ -14,13 +14,6 @@ public class Main {
     private static String dataFile = "data/GPL3.xml";
 
     public static void main(String[] args) throws Exception {
-//        List<String> lines = null;
-//        try {
-//            lines = Files.readAllLines(Paths.get(dataFile));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(lines);
 
         SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
         XMLHandler handler = new XMLHandler();
