@@ -28,7 +28,7 @@ public class DBConnection
 //                        "vendor_pn varchar(255) NOT NULL, " +
                         "partnumber varchar(255) NOT NULL, " +
                         "vendor varchar(255) NOT NULL, " +
-                        "price_usd DECIMAL(10,2), " +
+                        "price_usd DOUBLE(10,2), " +
                         "PRIMARY KEY (id))");
             } catch (SQLException e) {
                 e.printStackTrace();
