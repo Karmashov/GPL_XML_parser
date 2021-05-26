@@ -1,23 +1,23 @@
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
 
 public class Main {
 
-    private static String dataFile = "data/GPL3.xml";
+    private static String dataFile = "data/GPL4.1.xml";
 
     public static void main(String[] args) throws Exception {
 
         SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
-        XMLHandler handler = new XMLHandler();
+        XMLItemHandler handler = new XMLItemHandler();
 
         parser.parse(new File(dataFile),handler);
+
+//        BufferedReader br = new BufferedReader(new FileReader(dataFile));
+//        while (br.ready()) {
+//            for (int i = 0; i < 1; i++) {
+//                System.out.println(br.readLine());
+//            }
+//        }
     }
 }
